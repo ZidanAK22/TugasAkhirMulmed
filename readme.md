@@ -17,3 +17,7 @@ Penamaan image/audio/music
  e.g.
  asep marah.jpg // or .png or .webp 
 
+Placeholder Sprite from
+linxuelian.itch.io
+
+
