@@ -4,8 +4,10 @@
 # cnth. image eileen happy = "eileen_happy.png"
 
 # Deklarasikan karakter yang digunakan di game.
-define e = Character('Eileen', color="#c8ffc8")
-define ak = Character("Asep Kuda", color="#fff000")
+define ak = Character("Asep Kuda", color="#000000")
+define a = Character('Aria', color="#00ff48")
+define h = Character('Dr. Hakari', color="#0011f9")
+define b = Character('Bryan', color="#ff00fb")
 
 # Game dimulai disini.
 label start:
@@ -19,5 +21,22 @@ label start:
     play sound "baba booey.mp3" loop   
 
     ak "baba booey"
+
+    stop sound
+
+    scene black with fade
+
+    "Dalam dunia yang penuh dengan misteri dan keajaiban, terdapat sebuah sekolah khusus yang menyimpan rahasia tak terduga. Sekolah ini tidak biasa, karena di dalamnya terdapat sesuatu yang disebut \"Pintu Gerbang Alam Semesta.\" Pintu ini, suatu keajaiban yang aneh, membawa karakter utama kita, Aria, ke dalam petualangan yang melibatkan pengetahuan, budaya, dan sejarah di seluruh dunia."
+    "Aria, seorang siswi yang penuh semangat untuk belajar, menemukan Pintu Gerbang Alam Semesta secara tak sengaja. Tanpa menyadari kekuatan besar di baliknya, dia bersiap-siap untuk memulai perjalanan yang akan mengubah hidupnya."
+
+    scene bg cosmos with dissolve
+
+    "Episode 1: \"Pembukaan Pintu Alam Semesta\""
+
+    "Suatu hari, di sekolah khusus itu, Aria tanpa sengaja menemukan ruang tersembunyi yang tidak terlihat oleh mata manusia biasa. Di ruang itu, terdapat Pintu Gerbang Alam Semesta."
+
+    show mry_goldsect_neutral with fade
+
+    a "Apa ini? Mengapa tidak pernah kudengar sebelumnya?"
 
     return
