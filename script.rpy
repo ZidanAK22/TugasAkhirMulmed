@@ -28,6 +28,8 @@ label start:
 
     # stop sound
 
+    play music bglethal
+
     scene black with fade
 
     "Di sebuah sekolah biasa, Aria, seorang siswi yang penuh semangat untuk belajar, baru saja tiba di laboratorium Profesora Quantumia, ilmuwan eksentrik yang telah lama dikenalnya."
@@ -68,9 +70,72 @@ label start:
 
     a "Serius? Itu keren banget, Profesor. Emang kita mau pergi kemana dulu?"
 
-    q "Kita bisa mulai dengan pergi ke Piramid Giza di Mesir."
+    q "Mari kita coba mesin ini dengan pergi ke mesir!"
 
-    "Bersama-sama, Aria dan Profesora Quantumia memasuki teleporter dan memulai mesinnya, lalu memasukan koordinat piramid giza di mesir."
+    
+    menu:
+        
+        "Kenapa harus ke mesir prof?":
+            jump choice1_answer
+        "sepertinya menarik.....":        
+            jump choice1_answer
+
+    label choice1_answer:
+        
+        q "Mesir memiliki banyak keunikan, dari sungai nil, sejarah dan peninggalan sejarahnya seperti piramida." 
+
+        jump choice1_done
+
+    label choice1_done:
+
+        a "kalo begitu kita akan pergi kapan prof?"
+
+        q "kita akan pergi sekarang !!"
+
+        a "APAA SEKARANG!!!"
+
+    
+
+    "Bersama-sama, Aria dan Profesora Quantumia memasuki teleporter dan memulai mesinnya."
+
+    play sound teleport loop
+
+    "Lalu memasukan koordinat piramid giza di mesir. Tiba2 profesor menyalakan mesin dan memindahkan mereka ke mesir tepatnya didekat piramida."
+
+    stop sound
+
+    play music egypt
+
+    q "ALAT KU BERHASIL!!!"
+
+    a "setidaknya kita mendarat dengan mulus."
+
+    a "uwu, pemandangannya sungguh indah sekali."
+
+    q "kita tidak hanya datang ke sini untuk menikmati pemandangan. Ada sesuatu yang menarik perhatian saya. Lihatlah ke arah matahari terbenam di sana."
+
+    a "apakah itu piramida giza?"
+
+    q "benar itu, Piramida Giza adalah salah satu keajaiban dunia kuno yang paling terkenal."
+
+    q "Dalam sejarah Ini dibangun sekitar tahun 2580-2560 SM untuk Pharaoh Khufu. Piramida ini memiliki tinggi lebih dari 138 meter dan sebelumnya lebih tinggi lagi dengan penutup piramida yang hilang."
+
+    q "selanjutnya kitanya kita pergi ke jepang"
+
+    a "JAPAN !!!"
+
+    q "benar! Kita akan pergi ke kuil yang ada di kyoto jepang."
+
+    a "gass!!"
+
+    "Bersama-sama, Aria dan Profesora Quantumia memasuki teleporter dan memulai mesinnya, lalu memasukan koordinat kuil kyoto di jepang."
+
+    play sound teleport loop
+
+    scene black with dissolve
+
+    "To be continued{cps=5}..........{/cps}"
+    
 
     # play sound teleport
 
