@@ -5,9 +5,10 @@
 
 # Deklarasikan karakter yang digunakan di game.
 define ak = Character("Asep Kuda", color="#000000")
-define a = Character('Aria', color="#00ff48")
-define q = Character('Quantumia', color="#0011f9")
-define b = Character('Bryan', color="#ff00fb")
+define a = Character('Aria', color="#967509")
+define q = Character('Quantumia', color="#250a5f")
+
+image giza = Movie(play="pyramid480.webm", pos=(525,200), anchor=(0,0))
 
 # Game dimulai disini.
 label start:
@@ -102,9 +103,18 @@ label start:
 
     "Lalu memasukan koordinat piramid giza di mesir. Tiba2 profesor menyalakan mesin dan memindahkan mereka ke mesir tepatnya didekat piramida."
 
+    scene black with fade
+
+    scene bg dune with dissolve
+
     stop sound
 
     play music egypt
+
+    show mry_goldsect_neutral at left
+
+    show lxc_neutral at right    
+
 
     q "ALAT KU BERHASIL!!!"
 
@@ -116,9 +126,11 @@ label start:
 
     a "apakah itu piramida giza?"
 
+    show giza behind q
+
     q "benar itu, Piramida Giza adalah salah satu keajaiban dunia kuno yang paling terkenal."
 
-    q "Dalam sejarah Ini dibangun sekitar tahun 2580-2560 SM untuk Pharaoh Khufu. Piramida ini memiliki tinggi lebih dari 138 meter dan sebelumnya lebih tinggi lagi dengan penutup piramida yang hilang."
+    q "Dalam sejarah Ini dibangun sekitar tahun 2580-2560 SM untuk Pharaoh Khufu. Piramida ini memiliki tinggi lebih dari 138 meter dan sebelumnya lebih tinggi lagi dengan penutup piramida yang hilang."    
 
     q "selanjutnya kitanya kita pergi ke jepang"
 
