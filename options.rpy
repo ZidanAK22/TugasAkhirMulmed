@@ -12,7 +12,7 @@
 ##
 ## Tanda _() yang mengelilingi string menandai itu dapat di terjemahkan.
 
-define config.name = _("TugasAkhirMulmed")
+define config.name = _("Aria")
 
 
 ## Meng determinasikan apakah judul yang di berikan di atas di tampilkan di menu
@@ -23,13 +23,16 @@ define gui.show_name = True
 
 ## Versi Permainan.
 
-define config.version = "1.0"
+define config.version = "0.1"
 
 
 ## Teks yang ditempatkan pada layar tentang game. Tempatkan teks di antara tanda
 ## kutip tiga, dan biarkan baris kosong di antara paragraf.
 
 define gui.about = _p("""
+Created by Zidan Azra
+
+Sprites by linxuelian.itch.io
 """)
 
 
@@ -90,7 +93,7 @@ define config.after_load_transition = None
 
 ## Digunakan ketika memasuki menu utama setelah game berakhir.
 
-define config.end_game_transition = None
+define config.end_game_transition = dissolve
 
 
 ## Variabel untuk menset transisi yang digunakan ketika mulai game tidak
